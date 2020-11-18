@@ -23,7 +23,7 @@ export default class TelegramProvider {
         // 'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: JSON.stringify({
-        chatId,
+        chat_id: chatId,
         text: message,
         parseMode: parseMode || 'html'
       })
