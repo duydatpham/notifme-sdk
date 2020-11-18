@@ -25,7 +25,7 @@ export default class TelegramProvider {
       body: JSON.stringify({
         chat_id: chatId,
         text: message,
-        parseMode: parseMode || 'html'
+        parse_mode: parseMode || 'html'
       })
     }
     const response = await fetch(`${this.baseUrl}/${this.botToken}/sendMessage`, apiRequest)
